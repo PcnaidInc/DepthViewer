@@ -250,3 +250,7 @@ parkchamchi@gmail.com
 ### 2023 March 21
 
 I'll be still updating this project, it can be slow since the school has started again.
+
+## CI
+
+The CI workflow (`.github/workflows/ci.yml`) runs on pull requests and pushes to `master`. It performs a Python syntax check (`python -m py_compile`) on all Python files under `DEPTH/depthpy/`.
