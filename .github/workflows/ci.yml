@@ -22,8 +22,4 @@ jobs:
           python-version: '3'
       - name: Check Python syntax
         run: |
-          python -m py_compile DEPTH/depthpy/*.py
-          python -m py_compile DEPTH/depthpy/utils/*.py
-          python -m py_compile DEPTH/depthpy/midas/*.py
-          python -m py_compile DEPTH/depthpy/midas/backbones/*.py
-          python -m py_compile DEPTH/depthpy/deprecated/*.py
+          python -m compileall -q DEPTH/depthpy
